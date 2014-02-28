@@ -1,0 +1,793 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800";
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700";
+
+/* 
+    Created originally on : 24-Feb-2014
+    Author      : Eamonn Killian
+    Web         : www.eamonnkillian.com
+    Contact     : eamonnkillian@gmail.com
+
+    The css file for the WebSiteExampleTwo site.
+
+Thanks to Daniel Bruce (www.entypo.com) for lovely icons licensed under 
+CC BY-SA 3.0 and the font under SIL Open Font License.
+    
+*/
+
+body {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: #34495E;
+}
+
+#mainContainer
+{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 1050px;
+    height: 700px;
+    background-color: #34495E;
+
+}
+
+#lhsContainer {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 700px;
+
+}
+
+#rhsContainer {
+    position: relative;
+    float: left;
+    width: 950px;
+    height: 700px;
+    background-color: #95a5a6;
+}
+
+#small1 {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    background-color: #000;
+    text-align: center;
+    overflow: hidden;
+}
+
+#small2 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #c0392b;
+    text-align: center;
+}
+
+#small3 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #16a085;
+    text-align: center;
+}
+
+#small4 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #2980b9;
+    text-align: center;
+}
+
+#small5 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #DB620E;
+    text-align: center;
+}
+
+#small6 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #9b59b6;
+    text-align: center;
+}
+
+#small7 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #f39c12;
+    text-align: center;
+}
+
+
+.page {
+    display:none;
+    opacity: 0;
+    margin-top: 50;
+}
+
+.page.current {
+    display: block;
+    opacity:1;
+    margin-top: 50;
+}
+
+@font-face {
+    font-family: 'Entypo';
+    src: url('../font/entypo.eot');
+    src: local('☺'), 
+        url('../font/entypo.woff') format('woff'), 
+        url('../font/entypo.ttf') format('truetype'),
+        url('../font/entypo.svg#webfontIyfZbseF') format('svg');
+}
+
+@font-face {
+    font-family: 'Entypo-Social';
+    src: url('../font/entypo-social.eot');
+    src: local('☺'), 
+        url('../font/entypo-social.woff') format('woff'), 
+        url('../font/entypo-social.ttf') format('truetype'),
+        url('../font/entypo-social.svg#webfontIyfZbseF') format('svg');
+}
+
+.data-icon {
+    font-family: 'Entypo-Social','Entypo';
+    content: attr(data-icon);
+    font-size: 100px;
+    color: white;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.wse2logo {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    border: 0px;
+    outline: 0;
+    z-index: 1000;
+}
+
+.logosecond {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    border: 0px;
+    outline: 0;
+    padding-top: 25px;
+    z-index: 999;
+}
+
+#small1:hover div.wse2logo {
+    display:none;
+}
+
+
+#wholePage {
+    width: 950px;
+    height: 700px;
+    background-color: #34495E;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*
+/
+/ Lets do the grey topbox or topbanner next
+/
+*/
+
+div.firstBanner {
+    width: 950px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c0392b;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    z-index: 0;    
+    border: 1px black;
+}
+
+div.centerDiv {
+    width: 950px;
+    height: 200px;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*
+/
+/ Lets do the next box ...
+/
+*/
+
+div.secondBanner {
+    width: 950px;
+    height: 350px;
+    position: relative;
+    top: 200px;
+    left: 0px;
+    background-color: #fff;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+div.secondCenterDiv-A {
+    width: 200px;
+    height: 350px;
+    float: left;
+}
+
+div.secondCenterDiv-B {
+    width: 750px;
+    height: 350px;
+    float: left;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+div.secondCenterDiv-C {
+    width: 700px;
+    height: 350px;
+    padding-left: 20px;
+    position: relative;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+/
+/ Lets do the next box ...
+/
+*/
+
+div.thirdBanner {
+    width: 950px;
+    height: 350px;
+    position: relative;
+    top: 200px;
+    left: 0px;
+    background-color: #c0392b;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+div.thirdCenterDiv-A {
+    width: 750px;
+    height: 350px;
+    float: left;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.thirdCenterDiv-B {
+    width: 700px;
+    height: 350px;
+    position: relative;
+    padding-left: 35px;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.thirdCenterDiv-C {
+    width: 200px;
+    height: 350px;
+    float:left;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+/
+/ Lets do the footer ...
+/
+*/
+
+div.footer {
+    width: 940px;
+    height: 30px;
+    position: relative;
+    top: 200px;
+    left: 0px;
+    background-color: #000;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+#lhsFooter {
+    text-align: left;
+    float: left;
+    margin: 5px;
+}
+
+#rhsFooter {
+    text-align: right;
+    float: right;
+    margin: 5px;
+}
+
+
+.wse2-button {
+    display: inline-block; 
+    font-size: 12px; 
+    text-decoration: none!important; 
+    font-family: Helvetica, Arial, sans serif;
+    padding: 8px 12px; 
+    border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    box-shadow: inset 0px 0px 2px #fff;
+    -o-box-shadow: inset 0px 0px 2px #fff;
+    -webkit-box-shadow: inset 0px 0px 2px #fff;
+    -moz-box-shadow: inset 0px 0px 2px #fff;
+}
+
+.eton-button:active {
+    box-shadow: inset 0px 0px 3px #999;
+    -o-box-shadow: inset 0px 0px 3px #999;
+    -webkit-box-shadow: inset 0px 0px 3px #999;
+    -moz-box-shadow: inset 0px 0px 3px #999;
+}
+
+.grey {
+    color: #444;
+    border: 1px solid #d0d0d0;
+    background-image: -moz-linear-gradient(#ededed, #e1e1e1);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e1e1e1), to(#ededed));
+    background-image: -webkit-linear-gradient(#ededed, #e1e1e1);
+    background-image: -o-linear-gradient(#ededed, #e1e1e1);
+    text-shadow: 1px 1px 1px #fff;
+    background-color: #e1e1e1;
+}
+.grey:hover {
+    border: 1px solid #b0b0b0;
+    background-image: -moz-linear-gradient(#e1e1e1, #ededed);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#e1e1e1));
+    background-image: -webkit-linear-gradient(#e1e1e1, #ededed);
+    background-image: -o-linear-gradient(#e1e1e1, #ededed);
+    background-color: #ededed;
+}
+
+/*
+ 
+ Buidling the specialisms html
+
+*/
+
+#specBackground {
+    width: 950px;
+    height: 700px;
+    background-color: #16A085;
+    text-align: right;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#specBackground1 {
+    width: 950px;
+    height: 700px;
+    background-color: #16A085;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#accordion {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    width: 950px;
+    overflow: hidden;
+    background-color: #16A085;
+
+}
+
+#accordion li {
+    float: right;
+    background-color: #fff;
+    display: block;
+    text-align: left;
+    border: 0px;
+    height: 700px;
+    width: 80px;
+    overflow: hidden;
+    color: #000;
+    font-family:'Open Sans', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#accordion li img {
+    border: none;
+    float: left;
+    overflow:hidden;
+}
+
+#accordion li.active {
+    width: 100px;
+    text-align: left;
+}
+
+.executiveLI {
+    padding: 15px;
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+}
+
+.etonAccordianUL {
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+.etonAccordianLI {
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+.specTable td {
+    vertical-align: center;
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: 10px;
+    text-align: left;
+    padding: 2px;
+    border: 1px solid white;
+}
+
+.specTable {
+    border: 0;
+    width: 260px;
+}
+
+.specTableTD {
+    vertical-align: center;
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+    text-align: left;
+    padding: 2px;
+    border: 1px solid white;
+}
+
+/*
+
+ Building the meet page
+
+*/
+
+.meetContainer {
+    width: 950px;
+    height: 700px;
+    background-color: #34495E;
+    font-family:'Alegreya Sans SC', sans-serif;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+}
+
+.meetContainer1 {
+    width: 950px;
+    height: 700px;
+    background-color: #34495E;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+}
+
+.meetContainer h2 {
+    font-size: 20px;
+}
+
+.meetContainerTop {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 950px;
+    height: 105px;
+    background-color: #2980B9;
+}
+
+.meetContainerInner {
+    position: relative;
+    float: left;
+    width: 950px;
+    height: 495px;
+    background-color: #2980B9;
+}
+
+.meetContainerInnerLHS {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    width: 100px;
+    height: 495px;
+    background-color: #2980B9;
+    overflow: auto;
+}
+
+.meetContainerInnerMID {
+    position: relative;
+    float: left;
+    width: 750px;
+    height: 495px;
+    background-color: #2980B9;
+    overflow: auto;
+}
+
+.meetContainerBottom {
+    position: relative;
+    float: left;
+    width: 950px;
+    height: 100px;
+    background-color: #2980B9;
+}
+
+/* 
+/ This next compartment will contain the White Papers styles for white.html
+/ I'm going to use this file as well to keep it simple and in one place.
+/
+*/
+
+#whiteBackground {
+    width: 950px;
+    height: 700px;
+    background-color: white;
+    text-align: right;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#whiteBackground1 {
+    width: 950px;
+    height: 700px;
+    background-color: #34495E;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+}
+
+#whitePaperBuffer {
+    width: 950px;
+    height: 100px;
+    background-color: #DB620E;
+}
+
+#whitePaperBuffer1 {
+    width: 950px;
+    height: 600px;
+    background-color: white;
+}
+
+#whiteLHS {
+    width: 100px;
+    height: 600px;
+    float:left;
+    background-color: #DB620E;
+}
+
+#whiteMID {
+    width: 765px;
+    height: 600px;
+    float:left;
+    background-color: #fff;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    padding-left:35px;
+    padding-top: 15px;
+    color: black;
+    overflow: auto;
+}
+
+#whiteRHS {
+    width: 50px;
+    height: 600px;
+    float:left;
+    background-color: #DB620E;
+}
+
+#whiteTable {
+  border:0;
+  width: 650px;
+  padding:7px 5px;
+  vertical-align:top;
+  background-color: white;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-size: 14px;;
+}
+
+#whiteTable1 {
+  border:0;
+  width: 650px;
+  border-radius: 15px;
+  padding:7px 5px;
+  vertical-align:top;
+  background-color: #fef9f4;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+}
+
+#whiteTable1TD1 {
+  font-size: 12px;
+}
+
+#whiteTable1TD2 {
+  font-size: 12px;
+  width: 500px;
+}
+
+#whiteTable1TD3 {
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+}
+
+/* 
+/ This next compartment will contain the Contact Us styles for contact.html
+/ I'm going to use this file as well to keep it simple and in one place.
+/
+*/
+
+#contactBackground {
+    width: 950px;
+    height: 700px;
+    background-color: #f39c12;
+    text-align: right;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#contactBackground1 {
+    width: 950px;
+    height: 700px;
+    background-color: #34495E;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#contactBuffer {
+    width:665px;
+    height: 100px;
+}
+
+#contactTableBuffer {
+    width:200px;
+    height: 515px;
+    float: left;
+}
+
+#contactTable {
+    width: 150px;
+    vertical-align: center;
+    font-family:'Open Sans Condensed', Arial, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px;
+}
+
+#googlemap {
+    z-index: -1000;
+}
+
+.contact-button {
+    display: inline-block; 
+    font-size: 12px; 
+    text-decoration: none!important; 
+    font-family: Helvetica, Arial, sans serif;
+    padding: 8px 12px; 
+    border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    box-shadow: inset 0px 0px 2px #fff;
+    -o-box-shadow: inset 0px 0px 2px #fff;
+    -webkit-box-shadow: inset 0px 0px 2px #fff;
+    -moz-box-shadow: inset 0px 0px 2px #fff;
+}
+
+.contact-button:hover {
+    border: 1px solid #b0b0b0;
+    background-image: -moz-linear-gradient(#e1e1e1, #ededed);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#e1e1e1));
+    background-image: -webkit-linear-gradient(#e1e1e1, #ededed);
+    background-image: -o-linear-gradient(#e1e1e1, #ededed);
+    background-color: #ededed;
+}

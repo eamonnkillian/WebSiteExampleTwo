@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+    Created originally on : 19-Feb-2014
+    Author      : Eamonn Killian
+    Web         : www.eamonnkillian.com
+    Contact     : eamonnkillian@gmail.com
+
+    The main html index file for the WebSiteExampleTwo site. I created this site to 
+    showcase to a recruitment agency friend of mine how they could upgrade to a more
+    wizzy Jquery based environment. I thought I would share it out as an example for
+    others should they wish to utilise the style/approach ... 
+
+    I've included my key for the Google API call to the map .. Please register with 
+    Google here (https://support.google.com/maps/?hl=en#topic=3032023) to use your own
+    as mine will likely change over time ...
+
+    My thanks to SeizeDesign for the pictures that are from the free for any/commercial use - their site:
+    http://www.seizedesign.com/photography/25-inspiring-stock-photos-of-buildings-free-for-commercial-use/
+    
+-->
+<html>
+    <head>
+        <title>Web Site Example Two</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link rel=”stylesheet” href=”/font-face/entypo.css”>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7paN8tsWxAiQRstAdrz2gRUkJ7NsTcH0&sensor=true"></script>
+        <script type="text/javascript" src="js/jquery.min.2-1-0.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/pageTransitions.js"></script>
+    </head>
+    <body>
+
+        <div id="mainContainer">
+            <div id="lhsContainer">
+                <div id="small1">
+
+                    <div class="wse2logo"><img id="logoimg" src="img/logo.png" alt="" height="100" width="200"></div>
+                    <div class="logosecond"><a href="#"><img src="img/cloud-download.png" alt="" height="35" width="50" />
+                            <br>Download our Brochure</a>
+                    </div>
+                </div>
+                <div id="small2">
+                    <a href="index.html" title="Home Page" class="data-icon">&#8962;</a>
+                </div>
+                <div id="small3">
+                    <a href="#" title="Examine our Specialisations" class="data-icon">&#59392;</a>
+                </div>
+                <div id="small4">
+                    <a href="#" title="Meet our Team" class="data-icon">&#128101;</a>
+                </div>
+                <div id="small5">
+                    <a href="#" title="Read our Whitepapers" class="data-icon">&#128214;</a>
+                </div>
+                <div id="small6">
+                    <a href="#" title="Tweet About Us" class="data-icon" onClick="javascript:window.open('https://twitter.com/intent/tweet?text=Check out the all new example web site from @eamonnkillian','Twitter','height=400,width=650');">&#62217;</a>
+                </div>
+                <div id="small7">
+                    <a href="#" title="Contact Us" class="data-icon">&#9993;</a>
+                </div>               
+            </div>
+            <div id="rhsContainer">
+
+
+
+
+
+
+                <div id="wholePage">
+                    <div class="firstBanner">
+                        <div class="centerDiv">Place Your Strapline in Here</div>
+                    </div>
+                    <div class="secondBanner">
+                        <div class="secondCenterDiv-A">
+                            <img src="img/guerkin.jpg" alt="" height="350" width="200"/>
+                        </div>
+                        <div class="secondCenterDiv-B">
+                            <div class="secondCenterDiv-C">
+                                Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thirdBanner">
+                        <div class="thirdCenterDiv-A">
+                            <div class="thirdCenterDiv-B">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in <strong>reprehenderit in voluptate</strong> velit esse cillum dolore eu fugiat nulla 
+                            pariatur. 
+                            </div>
+                        </div>
+                        <div class="thirdCenterDiv-C">
+                            <img src="img/lloyds.jpg" alt="" height="350" width="200" />
+                        </div>
+                    </div>
+                    <div class="secondBanner">
+                        <div class="secondCenterDiv-A">
+                            <img src="img/steelbuilding.jpg" alt="" height="350" width="200"/>
+                        </div>
+                        <div class="secondCenterDiv-B">
+                            <div class="secondCenterDiv-C">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                            magna aliqua. Ut <strong>enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in <strong>reprehenderit in voluptate</strong> velit esse cillum dolore eu fugiat nulla 
+                            pariatur:
+                                <div class="wse1-topList">
+                                <a href="#" class="wse2-button grey">Button#1</a>
+                                <a href="#" class="wse2-button grey">Button#2</a>
+                                <a href="#" class="wse2-button grey">Button#3</a>
+                                <a href="#" class="wse2-button grey">Button#4</a>
+                                <a href="#" class="wse2-button grey">Button#5</a>
+                                <a href="#" class="wse2-button grey">Button#6</a>
+                                <a href="#" class="wse2-button grey">Button#7</a>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer"> 
+                        <div id="lhsFooter">&copy; Eamonn Killian</div>
+                        <div id="rhsFooter">+44 7896 103881 </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

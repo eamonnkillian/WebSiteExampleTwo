@@ -1,0 +1,44 @@
+<!doctype html>
+ 
+
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script type="text/javascript" src="js/jquery.min.2-1-0.js"></script>
+        <script type="text/javascript" src="js/pageTransitions.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( ".tabs" ).tabs();
+  });
+  </script>
+
+
+ 
+<div class="meetContainer">
+    <div class="meetContainerTop"></div>
+
+    <div class="meetContainerInner">
+        <div class="meetContainerInnerLHS"></div>
+        <div class="meetContainerInnerMID">
+            
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Tab 1</a></li>
+                    <li><a href="#tabs-2">Tab 2</a></li>
+                    <li><a href="#tabs-3">Tab 3</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>Tab one content.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>tab two content.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>tab three content.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="meetContainerBottom"></div>
+</div>

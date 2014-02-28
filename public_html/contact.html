@@ -1,0 +1,70 @@
+<!--
+    Created originally on : 19-Feb-2014
+    Author      : Eamonn Killian
+    Web         : www.eamonnkillian.com
+    Contact     : eamonnkillian@gmail.com
+
+    The contact file for the Web Site Example Two site.
+-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#contactBackground1").animate({left: '950px'}, 1400);
+        
+        var myCenter = new google.maps.LatLng(51.37407, 0.62039);
+
+        function initialize()
+        {
+            var mapProp = {
+                center: myCenter,
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE
+            });
+
+            marker.setMap(map);
+        }
+        
+        initialize('googleMap');
+    })
+
+</script>
+
+
+<div id="contactBackground">
+    <div id="contactBackground1">
+
+    </div>
+    
+    <div id="contactBuffer"></div>
+    
+    <div id="contactTableBuffer">
+        </div>
+    <table>
+        <tr><td id="contactTable">
+                <p><strong>Telephone:<br></strong> 
+                    07nnnnnnnnn</p>
+                <p><strong>Address:</strong><br>
+
+                    763 Lower Rainham Road,<br>
+                    Rainham,<br>
+                    Kent,<br>
+                    ME8 7UB <br>
+                    </p><br><br><br>
+                <form>
+                    <input type="button" class="contact-button" value="eMail Eamonn" onClick="parent.location = 'mailto:eamonnkillian@gmail.com?subject=Getting in touch...'">
+                </form>
+            </td>
+            <td> &nbsp;</td>
+            <td id="googleMap" width="500px" height="450px">
+            </td>
+        </tr>
+    </table>
+    </div>
+
+</div>
